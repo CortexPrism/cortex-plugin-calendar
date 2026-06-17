@@ -1,6 +1,6 @@
 {
   "name": "cortex-plugin-calendar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read/write Google Calendar, schedule meetings, find open slots",
   "kind": "esm",
   "entryPoint": "mod.ts",
