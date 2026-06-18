@@ -1,6 +1,6 @@
 {
   "name": "cortex-plugin-calendar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Read/write Google Calendar, schedule meetings, find open slots",
   "kind": "esm",
   "entryPoint": "mod.ts",
@@ -8,7 +8,7 @@
   "author": "CortexPrism",
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-calendar",
-  "homepage": "",
+  "homepage": "https://github.com/CortexPrism/cortex-plugin-calendar",
   "capabilities": [
     "tools",
     "network:fetch"
@@ -184,36 +184,40 @@
     }
   ],
   "ui": {
-    "section": "Google Calendar",
-    "fields": [
+    "settings": [
       {
-        "key": "calendarClientId",
-        "label": "Calendar Client ID",
-        "type": "text",
-        "description": "Google Cloud OAuth 2.0 client ID",
-        "required": true
-      },
-      {
-        "key": "calendarClientSecret",
-        "label": "Calendar Client Secret",
-        "type": "secret",
-        "description": "Google Cloud OAuth 2.0 client secret",
-        "required": true
-      },
-      {
-        "key": "calendarRefreshToken",
-        "label": "Calendar Refresh Token",
-        "type": "secret",
-        "description": "Google Calendar API refresh token",
-        "required": true
-      },
-      {
-        "key": "defaultDuration",
-        "label": "Default Event Duration",
-        "type": "number",
-        "description": "Default event duration in minutes",
-        "required": false,
-        "default": 30
+        "section": "Google Calendar",
+        "fields": [
+          {
+            "key": "calendarClientId",
+            "label": "Calendar Client ID",
+            "type": "text",
+            "description": "Google Cloud OAuth 2.0 client ID",
+            "required": true
+          },
+          {
+            "key": "calendarClientSecret",
+            "label": "Calendar Client Secret",
+            "type": "secret",
+            "description": "Google Cloud OAuth 2.0 client secret",
+            "required": true
+          },
+          {
+            "key": "calendarRefreshToken",
+            "label": "Calendar Refresh Token",
+            "type": "secret",
+            "description": "Google Calendar API refresh token",
+            "required": true
+          },
+          {
+            "key": "defaultDuration",
+            "label": "Default Event Duration",
+            "type": "number",
+            "description": "Default event duration in minutes",
+            "required": false,
+            "default": 30
+          }
+        ]
       }
     ]
   },
@@ -222,7 +226,9 @@
     "cortex": ">=1.0.0"
   },
   "aiDisclosure": {
-    "tools": ["Claude Code (Anthropic)"],
+    "tools": [
+      "Claude Code (Anthropic)"
+    ],
     "humanReview": true
   }
 }
