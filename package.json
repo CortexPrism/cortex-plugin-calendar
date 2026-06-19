@@ -12,7 +12,14 @@
     "lint": "deno lint",
     "validate": "deno check mod.ts && deno fmt --check && deno lint"
   },
-  "keywords": ["cortex", "plugin", "cortex-plugin", "calendar", "google-calendar", "esm"],
+  "keywords": [
+    "cortex",
+    "plugin",
+    "cortex-plugin",
+    "calendar",
+    "google-calendar",
+    "esm"
+  ],
   "author": "CortexPrism",
   "license": "MIT",
   "repository": {
