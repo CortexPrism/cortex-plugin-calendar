@@ -1,6 +1,6 @@
 {
   "name": "cortex-plugin-calendar",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Read/write Google Calendar, schedule meetings, find open slots",
   "kind": "esm",
   "entryPoint": "mod.ts",
@@ -23,7 +23,7 @@
           "type": "string",
           "description": "Calendar ID",
           "required": false,
-          "default": "primary"
+          "defaultValue": "primary"
         },
         {
           "name": "time_min",
@@ -42,7 +42,7 @@
           "type": "number",
           "description": "Maximum number of events to return",
           "required": false,
-          "default": 20
+          "defaultValue": 20
         },
         {
           "name": "query",
@@ -115,21 +115,21 @@
           "type": "number",
           "description": "Meeting duration in minutes",
           "required": false,
-          "default": 30
+          "defaultValue": 30
         },
         {
           "name": "start_hour",
           "type": "number",
           "description": "Start of working hours",
           "required": false,
-          "default": 9
+          "defaultValue": 9
         },
         {
           "name": "end_hour",
           "type": "number",
           "description": "End of working hours",
           "required": false,
-          "default": 17
+          "defaultValue": 17
         }
       ]
     },
@@ -166,7 +166,7 @@
           "type": "boolean",
           "description": "Whether to notify attendees",
           "required": false,
-          "default": true
+          "defaultValue": true
         }
       ]
     },
@@ -215,7 +215,7 @@
             "type": "number",
             "description": "Default event duration in minutes",
             "required": false,
-            "default": 30
+            "defaultValue": 30
           }
         ]
       }
@@ -223,7 +223,7 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "cortex": ">=1.0.0"
+    "cortex": ">=0.51.0"
   },
   "aiDisclosure": {
     "tools": [
